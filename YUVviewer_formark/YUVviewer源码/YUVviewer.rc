@@ -1,0 +1,282 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\YUVviewer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\YUVviewer.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080004b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "YUVviewer MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "YUVviewer\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "YUVviewer.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "YUVviewer Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x800, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About YUVviewer..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Singapore) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ZHI)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SINGAPORE
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About YUVviewer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "YUVviewer Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2001",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_YUVVIEWER_DIALOG DIALOGEX 100, 200, 497, 189
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "YUVviewer(加菲给改了改，哈哈)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,394,85,72,22
+    CONTROL         "CIF",IDC_SIZE_CIF,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,25,29,28,10
+    CONTROL         "QCIF",IDC_SIZE_QCIF,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,25,47,32,10
+    CONTROL         "Other",IDC_SIZE_OTHER,"Button",BS_AUTORADIOBUTTON,25,65,
+                    36,10
+    LTEXT           "宽：",IDC_STATIC_W,69,67,14,8
+    LTEXT           "高：",IDC_STATIC_H,115,67,14,8
+    EDITTEXT        IDC_SIZE_WIDTH,83,63,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SIZE_HEIGHT,129,63,27,12,ES_AUTOHSCROLL
+    GROUPBOX        "帧 尺寸",IDC_STATIC,16,12,149,75
+    LTEXT           "速率：",IDC_STATIC,180,32,25,8
+    COMBOBOX        IDC_FRAME_RATE,204,28,28,64,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "从第",IDC_STATIC,180,52,17,8
+    LTEXT           "帧到第",IDC_STATIC,229,52,24,8
+    EDITTEXT        IDC_FRAME_FROM,204,50,22,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRAME_TO,255,50,22,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "打开 文件",IDC_OPENFILE,394,13,72,22
+    PUSHBUTTON      "播放",IDC_PAUSEPLAY,394,37,72,22
+    PUSHBUTTON      "下 1 帧",IDC_NEXT,304,14,72,22
+    PUSHBUTTON      "倒 1 帧",IDC_PREVIOUS,304,62,72,22
+    PUSHBUTTON      "倒播(播放方向)",IDC_ORDER,304,109,72,22
+    PUSHBUTTON      "下 5 帧",IDC_NEXT5,304,39,72,22
+    PUSHBUTTON      "倒 5 帧",IDC_PREVIOUS5,304,86,72,22
+    GROUPBOX        "播放 参数",IDC_STATIC,175,12,120,75
+    CONTROL         "缩放 2x2",IDC_ZOOM,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,181,71,47,10
+    PUSHBUTTON      "关闭 全部",IDCLOSEALL,394,61,72,22
+    PUSHBUTTON      "返回到开始帧",IDC_TRANSFER,394,109,72,22
+    LTEXT           "    本软件可打开多个YUV文件(分辨率必须相同)进行播放，必须先指定正确的尺寸，然后打开文件，否则播放不正常",
+                    IDC_STATIC,22,105,265,20
+    GROUPBOX        "说明",IDC_STATIC,16,92,279,81
+    LTEXT           "帧",IDC_STATIC,283,52,8,8
+    LTEXT           "帧/秒",IDC_STATIC,236,32,20,8
+    LTEXT           "    可通过按钮进/退1帧/5帧。\n    可指定播放方向为正播或倒播。",
+                    IDC_STATIC,22,129,266,23
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_YUVVIEWER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 490
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_YUVVIEWER_DIALOG DLGINIT
+BEGIN
+    IDC_FRAME_RATE, 0x403, 3, 0
+0x3520, "\000" 
+    IDC_FRAME_RATE, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_FRAME_RATE, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_FRAME_RATE, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_FRAME_RATE, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_FRAME_RATE, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_FRAME_RATE, 0x403, 4, 0
+0x3939, 0x0039, 
+    0
+END
+
+#endif    // Chinese (Singapore) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\YUVviewer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

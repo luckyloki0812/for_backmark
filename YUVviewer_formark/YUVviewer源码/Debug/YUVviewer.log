@@ -1,0 +1,28 @@
+﻿生成启动时间为 2014/11/14 13:30:59。
+     1>项目“E:\wynn\BAIDUYUN\百度云同步盘\实验室电脑\陈鑫\cx材料\YUVviewer源码_注释过的\YUVviewer源码\YUVviewer.vcxproj”在节点 2 上(Build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“.\Debug\YUVviewer.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         D:\vs2012\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _CRT_SECURE_NO_DEPRECATE /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug\YUVviewer.pch" /Fo".\Debug\\" /Fd".\Debug\vc110.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt ChildWindow.cpp
+         ChildWindow.cpp
+       ResourceCompile:
+         所有输出均为最新。
+       Link:
+         D:\vs2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\YUVviewer.exe" /INCREMENTAL /NOLOGO /NODEFAULTLIB:libc /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:D:\vs2012\VC\Include\Manifest\dpiaware.manifest /DEBUG /PDB:".\Debug\YUVviewer.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\YUVviewer.lib" /MACHINE:X86 /SAFESEH /SAFESEH:NO .\Debug\YUVviewer.res
+         .\Debug\ChildWindow.obj
+         .\Debug\StdAfx.obj
+         .\Debug\YUVviewer.obj
+         .\Debug\YUVviewerDlg.obj
+         cscc.lib
+         YUVviewer.vcxproj -> E:\wynn\BAIDUYUN\百度云同步盘\实验室电脑\陈鑫\cx材料\YUVviewer源码_注释过的\YUVviewer源码\.\Debug\YUVviewer.exe
+       BscMake:
+         所有输出均为最新。
+       FinalizeBuildStatus:
+         正在删除文件“.\Debug\YUVviewer.unsuccessfulbuild”。
+         正在对“.\Debug\YUVviewer.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\wynn\BAIDUYUN\百度云同步盘\实验室电脑\陈鑫\cx材料\YUVviewer源码_注释过的\YUVviewer源码\YUVviewer.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.16
